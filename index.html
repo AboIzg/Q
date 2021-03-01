@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Qalyn calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Qalyn calculator</h1>
+                <form id="form">
+                  <div class="inputBlock">
+                    <label for="bname">Bride's/Groom's name</label>
+                    <input class="inputBox" type="text" id="name" name="name">
+                  </div><br>
+                  <div class="inputBlock">
+                    <label for="sbid">Starting bid</label>
+                    <input class="inputBox" type="number" id="number" name="number">
+                  </div><br>
+                  <label for="education_level">Education level:</label><br>
+                    <select id="education" class="select_cf" name="d1">
+                        <option value="1.5">Undergraduate degree</option>
+                        <option value="1.2">College degree</option>
+                        <option value="1.05">High school degree</option>
+                        <option value="0.9">Middle school degree</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth" class="select_cf" name="d2">
+                        <option value="2">More than 100,000$</option>
+                        <option value="1.5">Between 50,000$ and 100,000$</option>
+                        <option value="1.2">Less than 50,000$</option>
+                    </select>
+                    <br>
+                    <div class="form-group" id="sk">
+                      <p>Bride's/Groom's skills</p>
+                      <label><input name="skill" value="100"
+                      type="checkbox" class="input-checkbox input_plus">Playing on dombra</label>
+                      <label><input name="skill" value="200"
+                      type="checkbox" class="input-checkbox input_plus">Good cook</label>
+                      <label><input name="skill" value="150"
+                      type="checkbox" class="input-checkbox input_plus">Easygoing character</label>
+                      <label><input name="skill" value="100"
+                      type="checkbox" class="input-checkbox input_plus">Sings well</label>
+                    </div>
+                    <div id="ag">
+                      <p>Bride's/Groom's age<p>
+                      <input class="input_cf" type="radio" name="age" id="18" value="1.5">
+                      <label for="18">18-23</label>
+                      <input class="input_cf" type="radio" name="age" id="24" value="1.2" checked>
+                      <label for="24">24-27</label>
+                      <input class="input_cf" type="radio" name="age" id="28" value="0.95">
+                      <label for="28">28+</label>
+                    </div>
+                    <div class="form-group" id="rep">
+                      <p>Bride's/Groom's reputation</p>
+                      <label><input name="reputation" value="0.85"
+                      type="checkbox" class="input-checkbox input_cf">Gossips about his/her parent's attitude</label>
+                      <label><input name="reputation" value="0.9"
+                      type="checkbox" class="input-checkbox input_cf">Gossips about his/her character</label>
+                      <label><input name="reputation" value="-200"
+                      type="checkbox" class="input-checkbox input_plus">General gossips around his/her person</label>
+                    </div>
+                    <div class="form-group">
+                      <p>Love Letter</p>
+                      <textarea id="letter" class="input-textarea" name="letter" maxlength = 500></textarea>
+                    </div>
+                </form>
+                <br>
+                <button id="submit" type="submit">Calculate price</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
